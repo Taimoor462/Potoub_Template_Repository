@@ -1,0 +1,119 @@
+.properties {
+    h1 {
+        font-size: 3rem;
+        font-weight: 400;
+        text-align: center;
+        padding-bottom: 2em;
+
+        span {
+            color: $blue;
+        }
+    }
+
+    .bg-img {
+        padding: 7.5rem 5rem;
+        background-image: url(../images/bg-img.jpg);
+        width: 100%;
+
+        .bg-img-wrapper {
+            display: flex;
+
+            .function {
+                width: 26%;
+
+                a {
+                    text-decoration: none;
+                    color: $white;
+                    display: inline-table;
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    padding: 1em;
+                    width: 100%;
+                    margin-bottom: 2rem;
+
+
+                    &:hover,
+                    &.active {
+                        color: $white;
+                        background: $black;
+                        transition: all 0.3s ease-in;
+                    }
+                }
+
+                #last {
+                    margin-bottom: 0;
+                }
+
+            }
+
+            .admin {
+                width: 74%;
+                background: $white;
+                text-align: center;
+                padding: 3em;
+
+                h2 {
+                    color: $blue;
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                }
+
+                p {
+                    font-size: 1.1rem;
+                    line-height: 2rem;
+                }
+
+
+            }
+
+        }
+
+
+    }
+
+
+}
+
+
+@media (1200px > width > 1001px) {
+    #function a {
+        font-size: 1.2rem;
+    }
+}
+
+@media (1000px > width > 801px) {
+    #function a {
+        font-size: 0.9rem;
+    }
+
+    .admin {
+        p {
+            font-size: 0.9rem;
+        }
+    }
+}
+
+@media (max-width:800px) {
+    .properties .bg-img .bg-img-wrapper {
+        flex-direction: column;
+
+        .function {
+            width: 100%;
+        }
+
+        .admin {
+            width: 100%;
+        }
+
+    }
+}
+
+@media (max-width:500px) {
+    #function a {
+        font-size: 1rem;
+    }
+
+    .properties .bg-img {
+        padding: 5rem 2rem;
+    }
+}

@@ -1,0 +1,97 @@
+.contact{
+
+    background: $bg-blue;
+    width:100%;
+    padding: 6rem 1.5rem;
+
+
+    .container{
+        
+        h1{
+            font-size: 3rem;
+            font-weight: 400;
+            color: #382d3c;
+            line-height: 3.3rem ;
+            margin-bottom: 3rem;
+
+            span{
+                color: $white ;
+            }
+        }
+
+
+        .row{
+            width: 100%;
+            display: flex;
+
+            *{
+                flex: 1;
+            }
+
+            .form{
+                
+
+                form{
+                    width:100%;
+                    max-width: 95%;
+                    text-align: center;
+
+                    
+                    input{
+                        width: 100%;
+                        border-radius: 3rem;
+                        padding: 1.2rem 2rem;
+                        border: none;
+                        outline: none;
+                        font-size: 1.1rem;
+                        margin-bottom: 2rem;
+                    }
+                    textarea{
+                        width: 100%;
+                        border-radius: 1.3rem;
+                        padding: 30px;
+                        border: none;
+                        outline: none;
+                        font-size: 1.1rem;
+                        margin-bottom: 2rem;
+                    }
+
+                    a{
+                        display: inline-block;
+                        font-size: 1.1rem;
+                        text-decoration: none;
+                        padding: 0.8em 4.5em;
+                        font-weight: 400;
+                        color:$black;
+                        background: $white;
+                        border-radius: 5rem;
+                        
+
+                        &:hover{
+                            background: $black;
+                            color:$white;
+                            transition:all 0.5s ease-in-out;   
+                        }
+                    }
+
+                }
+            }  
+        }
+    }
+
+}
+
+
+@media (max-width:850px) {
+    .container .row{
+        flex-direction: column;
+
+        .container .row #form{
+            width: 100%;
+        }
+
+        .map{
+            width: 100%;
+        }
+    }
+}

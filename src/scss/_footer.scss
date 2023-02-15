@@ -1,0 +1,284 @@
+footer{
+    background: #212120;
+    width: 100%;
+    padding: 5rem 4rem;
+
+
+    .container{
+        display: flex;
+        color: $white;
+        
+
+        .first-div{
+            width: 50%;
+            display: flex;
+
+
+            .address{
+                width:70%;
+                padding-right: 5.4rem;
+
+                h2{
+                    font-size: 2rem;
+                    font-weight: 500;
+                    margin-bottom: 1.5rem;
+                }
+
+                p{
+                    font-size: 1.1rem;
+                    color:#a8a2a2;
+                }
+
+            }
+
+            .links{
+                width: 30%;
+                position:relative;
+
+
+                h2{
+                    font-size: 2rem;
+                    font-weight:500 ;
+                    margin-bottom: 1.3rem;
+                }
+
+                ul li:before {
+                    content: "";
+                    position: absolute;
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 20px;
+                    background: $white;
+                    margin-top: 9px;
+                    left: 0;
+                }
+                
+                
+                
+                li{
+
+                    padding-left: 1.5rem;
+                    list-style: none;
+                    font-size: 1.1rem;
+                    margin-bottom: 0.5rem;
+                    
+
+                    a{
+                        text-decoration: none;
+                        color: $white;
+
+                        &:hover{
+                            color: $bg-blue;
+                            transition:color 0.3s ease-in-out
+                        }
+                    }
+                }
+            }
+        }
+
+        .second-div{
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+           
+
+            .social{
+                width:30%;
+
+                h2{
+                    font-size: 2rem;
+                    font-weight:500 ;
+                    margin-bottom: 1.3rem;
+                }
+
+                .cover1, .cover2, .cover3, .cover4, .cover5{
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    margin-bottom: 1rem;
+
+                    &:hover a{
+                        color:$blue;
+                        transition:color 0.3s ease-in-out;
+                    }
+
+
+
+                    .icon{
+                        min-width: 2.2rem;
+                        height: 2.2rem;
+                        background:#fff;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        &:hover i{
+                            color:$blue;
+                            transition:color 0.3s ease-in-out;
+                        }
+    
+                        i{
+                            font-size: 1.3rem;
+                            color: $black;
+                        }
+
+                    }
+
+                    .name{
+                        font-size: 1.1rem;
+                        text-decoration: none;
+                        color: $white;
+                        padding-left: 1.5rem;
+                    }
+
+                }
+                
+            }
+
+            .news{
+                width: 60%;
+
+                h2{
+                    font-size: 2rem;
+                    font-weight:500 ;
+                    margin-bottom: 1.3rem;
+                }
+
+                input{
+                    font-size: 1.1rem;
+                    width: 100%;
+                    max-width: 95%;
+                    padding:1em ;
+                    border-radius: 0.7rem;
+                    border: none;
+                    outline: none;
+                    margin-bottom: 2rem;
+                }
+
+                a{
+                    font-size: 1.2rem;
+                    text-decoration:none;
+                    color: #fff;
+                    background: #0192c8;
+                    padding: 0.7em 1.7em;
+                    display: inline-block;
+                    border-radius: 0.7rem;
+
+                    &:hover{
+                        background: #0156ed;
+                        transition: background 0.5s ease-in;
+                    }
+                }
+            }
+
+
+
+        }
+
+    }
+
+
+}
+
+.line-footer{
+    background: #0192c8;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 1.3em;
+    color: #fff;
+    margin-bottom: 8rem;
+
+    a{
+        text-decoration: none;
+        color: #fff;
+
+        &:hover{
+            color: #212120;
+            transition: color 0.3s ease-in;
+        }
+    }
+}
+
+
+@media (max-width:1200px) {
+    footer .container{
+        flex-direction: column;
+
+        .first-div{
+            width: 100%;
+        }
+        .second-div{
+            width: 100%;
+        }
+    }
+}
+
+
+@media (max-width:768px) {
+    footer .container{
+
+        .first-div{
+            width: 100%;
+
+            .address{
+                width: 50%;
+                padding-right: 2rem;
+            }
+
+            .links{
+                width:50%;
+            }
+        }
+        .second-div{
+            width: 100%;
+
+            .social{
+                width:50%;
+            }
+
+            .name{
+                width:50%;
+            }
+        }
+    }
+}
+
+
+@media (max-width:568px) {
+    footer .container{
+
+        .first-div{
+            width: 100%;
+            flex-direction: column;
+
+            .address{
+                width: 100%;
+                padding-right: 2rem;
+            }
+
+            .links{
+                width:100%;
+            }
+        }
+        .second-div{
+            width: 100%;
+            flex-direction: column;
+
+            .social{
+                width:100%;
+
+                .cover1, .cover2, .cover3, .cover4, .cover5 {
+                    .name{
+                        padding-left: 25vw;
+                    }
+                }
+            }
+
+            .news{
+                width:100%;
+
+            }
+        }
+    }
+}

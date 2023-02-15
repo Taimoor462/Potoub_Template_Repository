@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a2a9cf95ad.js" crossorigin="anonymous"></script>
+    <title>Potoub</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+    <header id="home">
+        <nav class="nav">
+            <img id="logo" src="./src/images/logo.png" alt="logo">
+
+            <div class="nav-items">
+                <ul class="topbar">
+                    <div class="li-wrapper">
+                        <li><a class="btn" href="#">Download</a></li>
+                    </div>
+                    <div class="li-wrapper">
+                        <li><a class="sign" href="#">Sign Up</a></li>
+                    </div>
+                    <div class="li-wrapper">
+                        <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    </div>
+                    <div class="li-wrapper">
+                        <li>
+                            <label id="hamburger" onclick="sidebar()"><i class="fa-sharp fa-solid fa-bars"></i></label>
+                            <div class="sidebar" id="side">
+                                <i id="close" onclick="closeit()" class="fa fa-times" aria-hidden="true"
+                                    title="close"></i>
+                                <ul>
+                                    <li><a class="active" href="#home">Home</a></li>
+                                    <li><a href="#about">About</a></li>
+                                    <li><a href="#work">Work</a></li>
+                                    <li><a href="#contact">Contact</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+
+
+
+        <div class="intro">
+            <div class="text">
+                <h1>Get Thinking A long time</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
+                <a href="#">Read more</a>
+            </div>
+
+            <div class="header-img">
+                <img src="./src/images/header-img.png" alt="image with a laptop and three persons">
+            </div>
+        </div>
+    </header>
+    <section class="about" id="about">
+
+        <div class="about-img">
+            <img src="./src/images/about_img.jpg" alt=".......">
+        </div>
+        <div class="about-text">
+            <h1>About <span>Software</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit</p>
+            <a href="#">Read more</a>
+        </div>
+    </section>
+
+    <section class="properties">
+        <h1>Why <span>Choose Us</span></h1>
+
+        <div class="bg-img">
+            <div class="bg-img-wrapper container">
+                <div class="function " id="function">
+                    <a class="active" href="#">Easy to customise</a>
+                    <a href="#">More flexible</a>
+                    <a href="#">Clean mode</a>
+                    <a id="last" href="#">Ratinaready</a>
+
+                </div>
+
+                <div class="admin">
+                    <img src="./src/images/admin.png" alt="png logo">
+                    <h2>Ad Minim</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="works" id="work">
+        <div class="works-text">
+            <h1>How To <span>Works it</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit</p>
+            <a href="#">Read more</a>
+        </div>
+
+        <div class="works-img">
+            <img src="./src/images/work_img.jpg" alt="working employs image">
+        </div>
+
+    </section>
+
+    <section class="contact" id="contact">
+        <div class=" container">
+            <h1>Request <span>A call Back</span></h1>
+
+            <div class="row">
+                <div class="form" id="form">
+                    <form>
+                        <input type="text" placeholder="Full Name"><br>
+                        <input type="email" placeholder="Email"><br>
+                        <input type="text" placeholder="Phone Number"><br>
+                        <textarea name="" id="" cols="30" rows="5" placeholder="Message"></textarea><br>
+                        <a href="#">Send</a>
+                    </form>
+                </div>
+
+
+                <div class="map">
+                    <div class="mapouter">
+                        <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
+                                marginheight="0" marginwidth="0"
+                                src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=ialamabad&amp;t=k&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                                href="https://mcpenation.com/">https://mcpenation.com</a></div>
+                        <style>
+                            .mapouter {
+                                position: relative;
+                                text-align: right;
+                                width: 100%;
+                                height: 400px;
+                            }
+
+                            .gmap_canvas {
+                                overflow: hidden;
+                                background: none !important;
+                                width: 100%;
+                                height: 400px;
+                            }
+
+                            .gmap_iframe {
+                                height: 400px !important;
+                            }
+                        </style>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="first-div">
+                <div class="address">
+                    <h2>Address</h2>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                        when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                        distribution of letters,</p>
+                </div>
+                <div class="links">
+                    <h2>Links</h2>
+                    <ul>
+                        <li><a href='#'>Home</a></li>
+                        <li><a href='#'>About</a></li>
+                        <li><a href='#'>Work</a></li>
+                        <li><a href='#'>Contact</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="second-div">
+                <div class="social">
+                    <h2>Follow Us</h2>
+                    <div class="cover1">
+                        <div class="icon">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        </div>
+
+                        <a class="name" href="#">Facebook</a>
+                    </div>
+                    <div class="cover2">
+                        <div class="icon">
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+
+                        <a class="name" href="#">Twitter</a>
+                    </div>
+                    <div class="cover3">
+                        <div class="icon">
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+
+                        <a class="name" href="#">Linkedin</a>
+                    </div>
+                    <div class="cover4">
+                        <div class="icon">
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+
+                        <a class="name" href="#">Youtube</a>
+                    </div>
+                    <div class="cover5">
+                        <div class="icon">
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+
+                        <a class="name" href="#">Instagram</a>
+                    </div>
+
+                </div>
+
+                <div class="news">
+                    <h2>Newsletter</h2>
+                    <input type="email" name="" id="" placeholder="Enter Your Email"><br>
+                    <a href="#">SUBSCRIBE </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <div class="line-footer">
+        <p>Copyright 2045 All Rights Reserved. By <a href="#">HTML Design</a></p>
+    </div>
+
+    <h1>Modern technology</h1>
+    <p>
+        Technology changes but I keep up with it. I look to modern technology to deliver the best performance, security
+        and flexibility for your digital business, ensuring your team can get more done, easier and faster.
+    </p>
+
+    <script>
+
+        function sidebar() {
+            document.getElementById('side').style.display = 'block';
+        }
+
+        function closeit() {
+            document.getElementById('side').style.display = 'none';
+        }
+
+        // const toggle = document.getElementById('hamburger');
+        // const sidebar = document.getElementById('side');
+
+        // document.onclick = function(e){
+        //     if(e.target !== toggle && e.target !== sidebar){
+        //         document.getElementById('side').style.display = 'none';
+        //         console.log('clicked');
+        //     }
+        // };
+        
+    </script>
+</body>
+
+</html>

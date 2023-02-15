@@ -1,0 +1,72 @@
+.intro{
+    display: flex;
+    padding: 9rem 0;
+
+
+    .text{
+        width: 45%;
+        padding-left: 8vw;
+        padding-right: 3rem;
+        
+
+        h1{
+            // font-size: 4.5rem;
+            font-size: 5.5vw;
+            color:$white;
+            display: block;
+            margin-bottom: 2rem;
+        }
+        p{
+            font-size: 1.1rem;
+            color: $white;
+            margin-bottom: 2rem;
+            display: block;
+            font-weight: 500;
+        }
+
+        a{
+            display: inline-block;
+            font-size: 1rem;
+            text-decoration: none;
+            padding: 1em 3.5em;
+            font-weight: 600;
+            border: 5px solid $white;
+            color:$black;
+            border-radius: 5rem;
+            
+
+            &:hover{
+                background: $black;
+                color:$white;
+                transition:all 0.5s ease-in-out;   
+            }
+        }
+    }
+    .header-img{
+        width: 55%;
+
+        img{
+            width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+    }
+}
+
+
+
+@media (max-width:768px) {
+    .intro{
+        flex-direction: column;
+
+        .text{
+            width: 100%;
+        }
+
+        .header-img{
+            width: 100%;
+        }
+    }
+}
+
+

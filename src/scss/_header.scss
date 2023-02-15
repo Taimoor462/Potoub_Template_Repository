@@ -1,0 +1,129 @@
+header{
+    background: $blue;
+    width: 100%;
+    background-image: url(../images/corner.png);
+    background-repeat: no-repeat;
+
+    .nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding:3.5em 4.5em ;
+
+        .topbar{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.3rem 0.6rem;
+
+            .btn{
+                background: $white;
+                font-size: 16px;
+                border: none;
+                padding: 0.5em 2em;
+                border-radius: 10px;
+                text-decoration: none;
+                color: $black;
+
+
+                &:hover{
+                    background: #000;
+                    color : #fff;
+                    transition: all 0.3s ease-in;
+    
+                }
+                
+            }
+
+            .sign{
+                text-decoration: none;
+                color: $white;
+                font-size: 16px;
+                display: block ;
+            }
+            #click{
+                display: none;
+            }
+            
+            // #click:checked ~ .sidebar{
+            //     left: 0;
+            //     transition:all 0.3s ease-in-out
+            // }
+
+            i{
+                color: $white;
+                font-size: 1rem;
+            }
+
+            .li-wrapper{
+                padding-inline: 2vw;
+            }
+            li{
+
+                label i{
+                    font-size: 1.8rem;
+                    cursor: pointer;
+                }
+            }    
+        }
+        
+        .sidebar{
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 200px;
+            background:#fff;
+            display: none;
+
+            #close{
+                font-size: 24px;
+                color: black;
+                position: absolute;
+                top: 3%;
+                right: 6%;
+                cursor: pointer;
+            }
+            
+            ul {
+                margin-top: 5rem;
+                list-style: none;
+
+                a{
+                    display: inline-block;
+                    text-decoration: none;
+                    font-size: 1.1rem;
+                    color: #000;
+                    width: 100%;
+                    padding: 1em;
+                    font-weight: 500;
+
+                    &:hover,
+                    &.active{
+                        background:#35bff8;
+                        color: #fff;
+                        transition: all 0.3s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width:768px) {
+    header .nav{
+        display: block;
+    }
+}
+
+@media (max-width:500px) {
+
+    header .nav .topbar .btn{
+        padding: 0.6em 1.5em;
+    }
+}
+
+
